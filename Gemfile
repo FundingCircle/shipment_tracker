@@ -23,7 +23,7 @@ gem 'pg_failover'
 gem 'pg_search'
 gem 'pg', '~> 0.18.0'
 gem 'raindrops'
-gem 'prometheus_exporter', require: false
+gem 'prometheus_exporter', '< 0.6.0', require: false
 gem 'pry-rails'
 gem 'rugged', '~> 1.0.0'
 gem 'sass-rails'
