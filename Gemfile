@@ -59,7 +59,7 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails', '< 1.5', require: false
   gem 'database_cleaner'
   gem 'factory_bot'
   gem 'rack-test', require: 'rack/test'
