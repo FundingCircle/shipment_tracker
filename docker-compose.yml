@@ -31,6 +31,7 @@ services:
       SSH_PRIVATE_KEY:
       SSH_USER: git
       UNICORN_TIMEOUT: 3600
+      DISABLE_DATABASE_ENVIRONMENT_CHECK: 1
     env_file: secrets.env
     tty: true
     stdin_open: true
@@ -127,6 +128,7 @@ services:
     command: postgres -c log_statement=all
     environment:
       POSTGRES_DB: shipment_tracker
+      POSTGRES_HOST_AUTH_METHOD: trust
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
